@@ -1,0 +1,123 @@
+.companyMenu {
+	margin: 10px 0 30px; 
+}
+
+.companyMenu a {
+    border: 2px solid #fff;
+    height: 40px;
+    line-height: 40px;
+    transition-duration: .2s;
+}
+
+.companyMenu a:hover {
+	border: 2px solid #aaa;
+	transform: scale(1.1);
+	z-index: 20;
+}
+
+.companyMenu a img{
+    max-height: 30px;
+    vertical-align: middle;
+    margin-top: -3px;
+}
+
+.dropbtn {
+	background-color: #288ad6;;
+	color: #fff;
+	padding: 10px 14px;
+	font-size: 15px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-bottom: 5px;
+	transition-duration: .3s;
+}
+.dropbtn:after {
+	content: ' \25B7';
+}
+.dropdown:hover .dropbtn:after{
+	content:' \25BD'
+}
+.dropdown {
+	position: relative;
+	margin: 10px 5px;
+}
+.dropdown-content {
+	z-index: 1;
+	position: absolute;
+	min-width: 170px;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, .8);
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+	transform: rotateX(90deg);
+	transition-duration: .3s;
+}
+.dropdown-content a {
+	color: #444;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+.dropdown-content a:hover { 
+	color: white;
+	background-color: #3A70A6;
+}
+.dropdown:hover .dropdown-content {
+	transform: rotateY(0deg);
+}
+.dropdown:hover .dropbtn {
+	background-color: rgb(11, 116, 229);
+}
+
+.choosedFilter { margin: 10px auto; }
+.choosedFilter i { transition-duration: .3s; }
+.choosedFilter a:hover > h3 > i { color: red; }
+.choosedFilter a {
+    font-size: 12px;
+    padding: 6px;
+    color: #fff;
+    background: #288ad6;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+
+.khungSanPham {
+	width: 100%;
+	margin: 50px 0;
+	border-radius: 5px;
+	border: 2px solid #ff4d00; 
+	box-sizing: border-box; 
+}
+
+.khungSanPham h3.tenKhung {
+	line-height: 1.5em;
+	font-size: 1.5em;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 1em;
+	color: #3A70A6;
+	transform: translateY(-0.75em);
+}
+
+.khungSanPham li {
+	list-style-type: none; 
+}
+
+
+.xemTatCa {
+	display: block;
+	font-weight: bold;
+	text-align: center;
+	margin:	0 auto;
+	padding: .5em 1em;
+	border-radius: 1em;
+	color: #888;
+	background-color: #eee;
+	transition-duration: .2s;
+	transform: translateY(1em);
+}
+.xemTatCa:hover {
+	background-color: #ccc;
+	color: #000;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PhoneStore</title>
+	<link rel="shortcut icon" href="img/logo.png" />
+
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+	
+   
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/taikhoan.css">
+    <link rel="stylesheet" href="css/chitietsanpham.css">
+    <link rel="stylesheet" href="css/footer.css">
+    
+    <script src="data/products.js"></script>
+    <script src="js/classes.js"></script>
+    <script src="js/dungchung.js"></script>
+    <script src="js/chitietsanpham.js"></script>
+</head>
+
+<body>
+
+   
+
+    <section>
+        <script> addHeader(); </script>
+
+        <div class="chitietSanpham" style="min-height: 85vh">
+            <h1>Điện thoại </h1>
+            <div class="rowdetail group">
+                <div class="picture">
+                    <img src="" onclick="opencertain()">
+                </div>
+                <div class="price_sale">
+                    <div class="area_price"> </div>
+                   
+                    <div class="info_product">
+                        <h2>Thông số kỹ thuật</h2>
+                        <ul class="info">
+    
+                        </ul>
+                    </div>
+                   
+                    <div class="area_order">
+                            <a class="buy_now" onclick="themVaoGioHang(maProduct, nameProduct);">
+                            <b><i class="fa fa-cart-plus"></i> Thêm vào giỏ hàng</b>
+                            </a>
+                    </div>
+                </div>
+               
+            </div>
+            <div id="overlaycertainimg" class="overlaycertainimg">
+                <div class="close" onclick="closecertain()">&times;</div>
+                <div class="overlaycertainimg-content">
+                    <img id="bigimg" class="bigimg" src="img/chitietsanpham/oppo-f9-red-2-400x460.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>addContainTaiKhoan();</script>
+
+    <div class="footer"><script>addFooter();</script></div>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+.infoUser table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.infoUser table th {
+    font-size: 26px;
+    font-weight: bold;
+    padding: 10px 5px;
+}
+
+.infoUser table td {
+    font-size: 18px;
+}
+.infoUser table td:first-child {
+    font-weight: bold;
+    text-align: right;
+}
+
+.infoUser input {
+    font-size: 20px;
+    border-radius: 5px;
+    text-align: center;
+    transition-duration: .15s;
+    border: 1px solid #aaa;
+}
+
+.infoUser input:read-only {
+    border: 1px solid transparent;
+}
+

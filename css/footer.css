@@ -1,0 +1,19 @@
+.footer {
+    
+    width: 100%;
+}
+.footer-item {
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    color: black;
+    background-color: rgb(238, 238, 238);
+}
+.copy-right {
+    font-weight: bold;
+    font-size: 15px;
+}
+.copy-right a:hover{
+    color: #888;
+}

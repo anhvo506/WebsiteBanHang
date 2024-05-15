@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<title>PhoneStore</title>
+	<link rel="shortcut icon" href="img/logo.png" />
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+
+	<link rel="stylesheet" href="css/taikhoan.css">
+	<link rel="stylesheet" href="css/trangchu.css">
+	<link rel="stylesheet" href="css/home_products.css">
+	<link rel="stylesheet" href="css/pagination_phantrang.css">
+	<link rel="stylesheet" href="css/footer.css">
+
+	<script src="data/products.js"></script>
+	<script src="js/classes.js"></script>
+	<script src="js/dungchung.js"></script>
+	<script src="js/trangchu.js"></script>
+
+</head>
+
+<body>
+
+	<div class="top-nav">
+		<section>
+			<ul class="top-nav-quicklink">
+
+				<li><a href="gioithieu.html"><i class="fa fa-info-circle"></i> Giới thiệu</a></li>
+			</ul>
+		</section>
+	</div>
+
+	<section>
+		<script> addHeader(); </script>
+
+	
+		<div id="slide-show">
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+					<img src="img/banners/banner0.png">
+
+				</div>
+
+				<div class="mySlides fade">
+					<img src="img/banners/banner1.png">
+
+				</div>
+
+				<div class="mySlides fade">
+					<img src="img/banners/banner2.png">
+
+				</div>
+
+				<div class="mySlides fade">
+					<img src="img/banners/banner3.png">
+
+				</div>
+
+				<div class="mySlides fade">
+					<img src="img/banners/banner4.png">
+
+				</div>
+			</div>
+
+		</div>
+		<script>
+			var slideIndex = 0;
+			showSlides();
+			function showSlides() {
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				slideIndex++;
+				if (slideIndex > slides.length) { slideIndex = 1 }
+				slides[slideIndex - 1].style.display = "flex";
+				setTimeout(showSlides, 2500);
+
+			}
+		</script>
+
+
+		<br>
+		<div class="companyMenu group flexContain"></div>
+		
+		<div class="flexContain">
+			<div class="pricesRangeFilter dropdown">
+				<button class="dropbtn">Giá tiền</button>
+				<div class="dropdown-content"></div>
+			</div>
+		</div> 
+
+		<div class="choosedFilter flexContain">
+			<a id="deleteAllFilter" style="display: none;">
+				<h3>Xóa bộ lọc</h3>
+			</a>
+		</div> 
+		<hr>
+
+		
+		<div class="contain-products" style="display:none">
+
+
+			<ul id="products" class="homeproduct group flexContain">
+				<div id="khongCoSanPham">
+					<i class="fa fa-times-circle"></i>
+					Không có sản phẩm nào
+				</div> 
+			</ul>
+
+			<div class="pagination"></div>
+		</div>
+
+	
+		<div class="contain-khungSanPham"></div>
+
+	</section>
+
+	<script>
+		addContainTaiKhoan(); 
+	</script>
+
+	<div class="footer">
+		<script>addFooter();</script>
+	</div>
+
+	<i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+</body>
+
+</html>

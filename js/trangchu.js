@@ -313,14 +313,14 @@ function alertNotHaveProduct(coSanPham) {
 	if (!coSanPham) {
 		thongbao.style.width = "auto";
 		thongbao.style.opacity = "1";
-		thongbao.style.margin = "auto"; // Căn giữa
-		thongbao.style.transitionDuration = "1s"; // hiện ra từ từ
+		thongbao.style.margin = "auto"; 
+		thongbao.style.transitionDuration = "1s"; 
 
 	} else {
 		thongbao.style.width = "0";
 		thongbao.style.opacity = "0";
 		thongbao.style.margin = "0";
-		thongbao.style.transitionDuration = "0s"; // Ngay lâp tức biến mất
+		thongbao.style.transitionDuration = "0s"; 
 	}
 }
 
